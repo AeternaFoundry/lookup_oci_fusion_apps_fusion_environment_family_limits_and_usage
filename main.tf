@@ -1,0 +1,6 @@
+data "oci_fusion_apps_fusion_environment_family_limits_and_usage" "fusion_apps_fusion_environment_family_limits_and_usage_lookup" {
+  for_each = var.fusion_apps_fusion_environment_family_limits_and_usage_lookup
+
+  fusion_environment_family_id = each.value.fusion_environment_family_id
+}
+
